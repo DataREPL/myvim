@@ -90,13 +90,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 export JAVA_8_HOME=`/usr/libexec/java_home -v 1.8`
 export PATH=$PATH:$JAVA_HOME/bin
 
-# test env
-alias testapi="ssh -p9922 api@10.20.34.204" # kgOzsye1mHNzcTk7fU7a
-alias testrecsys="ssh -p9922 games_recommendation@10.20.34.203" # games_recommendation
-alias testxueyi="ssh -p9922 xueyi@10.20.34.203" # xueyi
-alias testrtts="ssh -p9922 rtts@10.20.34.202" #uaerouter5-vm01
-alias tpad="ssh -p9922 xueyi@100.84.73.56"
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # vim runtime
