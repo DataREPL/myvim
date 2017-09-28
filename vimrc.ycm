@@ -4,11 +4,11 @@
 NeoBundle 'justmao945/vim-clang.git'                                                                                                                  |||     Tlist_Auto_Open
                                                                                                                                                       |||     g:easytags_cmd
 " Tips for python                                                                                                                                     |||     g:easytags_file
-davidhalter/jedi-vim                                                                                                                                  |||     g:ctrlp_map
+NeoBundle 'davidhalter/jedi-vim'                                                                                                                              |||     g:ctrlp_map
                                                                                                                                                       |||     g:ctrlp_cmd
 " vim-snipmate and vim-snippets                                                                                                                       |||     g:airline#extensions#ta
-Plugin 'MarcWeber/vim-addon-mw-utils'                                                                                                                 |||     g:airline#extensions#ta
-Plugin 'tomtom/tlib_vim'                                                                                                                              |
-Plugin 'garbas/vim-snipmate'                                                                                                                          |   ~
+NeoBundle 'MarcWeber/vim-addon-mw-utils'                                                                                                                 |||     g:airline#extensions#ta
+NeoBundle 'tomtom/tlib_vim'                                                                                                                              |
+NeoBundle 'garbas/vim-snipmate'                                                                                                                          |   ~
 " Optional:                                                                                                                                           |   ~
-Plugin 'honza/vim-snippets'
+NeoBundle 'honza/vim-snippets'
