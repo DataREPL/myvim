@@ -1,0 +1,14 @@
+
+" Replacement for YouCompleteMe plugin                                                                                                                |||     Tlist_Exit_OnlyWindow
+" vim-clang                                                                                                                                           |||     Tlist_Show_One_File
+NeoBundle 'justmao945/vim-clang.git'                                                                                                                  |||     Tlist_Auto_Open
+                                                                                                                                                      |||     g:easytags_cmd
+" Tips for python                                                                                                                                     |||     g:easytags_file
+davidhalter/jedi-vim                                                                                                                                  |||     g:ctrlp_map
+                                                                                                                                                      |||     g:ctrlp_cmd
+" vim-snipmate and vim-snippets                                                                                                                       |||     g:airline#extensions#ta
+Plugin 'MarcWeber/vim-addon-mw-utils'                                                                                                                 |||     g:airline#extensions#ta
+Plugin 'tomtom/tlib_vim'                                                                                                                              |
+Plugin 'garbas/vim-snipmate'                                                                                                                          |   ~
+" Optional:                                                                                                                                           |   ~
+Plugin 'honza/vim-snippets'
