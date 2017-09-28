@@ -3,6 +3,10 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 NOW="$(date +'%Y%m%d%H%m%s')"
 
+brew install macvim
+brew install ctags
+brew install cmake
+
 echo "Check if old vim config exists."
 if [[  -d $HOME/.vim ]]; then
     mv $HOME/.vim $HOME/.vim.${NOW}
