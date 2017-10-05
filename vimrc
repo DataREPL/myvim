@@ -73,7 +73,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 " 1. install 7.3+: https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
 " 2. Build the plugin: https://github.com/Valloric/YouCompleteMe
 NeoBundle 'Valloric/YouCompleteMe'
-" let g:ycm_global_ycm_extra_conf = '/Users/andy/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '/Users/andy/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
 
 " NERDTree
 NeoBundle 'scrooloose/NERDTree'
@@ -142,6 +142,20 @@ call neobundle#end()
 " Required:
 filetype plugin indent on
 
+" Track the engine.
+NeoBundle 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+NeoBundle 'honza/vim-snippets'
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
@@ -161,3 +175,4 @@ match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+
