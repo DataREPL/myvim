@@ -114,8 +114,7 @@ NeoBundle 'xolox/vim-easytags'
 NeoBundle 'xolox/vim-misc'
 autocmd BufWritePost * exe ":UpdateTags"
 let g:easytags_cmd = '/usr/local/bin/ctags'
-let g:easytags_file = '.tags'
-
+let g:easytags_file = '~/.vim/tags'
 
 " gundo
 NeoBundle 'sjl/gundo.vim'
@@ -137,12 +136,7 @@ nnoremap <C-F> :bp<CR>
 " https://github.com/tpope/vim-fugitive
 NeoBundle 'tpope/vim-fugitive'
 
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" Track the engine.
+" Ultisnips Track the engine.
 NeoBundle 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
@@ -155,6 +149,14 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+"Asyncrun plugin
+NeoBundle 'kywind3000/asyncrun.vim'
+
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
