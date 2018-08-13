@@ -72,8 +72,8 @@ NeoBundle 'altercation/vim-colors-solarized'
 " Need follow the README:
 " 1. install 7.3+: https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
 " 2. Build the plugin: https://github.com/Valloric/YouCompleteMe
-NeoBundle 'Valloric/YouCompleteMe'
-let g:ycm_global_ycm_extra_conf = '/Users/andy/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
+" NeoBundle 'Valloric/YouCompleteMe'
+" let g:ycm_global_ycm_extra_conf = '/Users/andy/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
 
 " NERDTree
 NeoBundle 'scrooloose/NERDTree'
@@ -151,10 +151,14 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
 "Asyncrun plugin
-NeoBundle 'kywind3000/asyncrun.vim'
-augroup vimrc
-    autocmd User AsyncRunStart call asyncrun#quickfix_toggle(8, 1)
-augroup END
+" NeoBundle 'kywind3000/asyncrun.vim'
+" augroup vimrc
+"     autocmd User AsyncRunStart call asyncrun#quickfix_toggle(8, 1)
+" augroup END
+
+NeoBundle 'tibabit/vim-templates'
+let g:tmpl_author_email = 'xx@xx.com'
+let g:tmpl_author_name  = 'Xue Yi'
 
 call neobundle#end()
 
